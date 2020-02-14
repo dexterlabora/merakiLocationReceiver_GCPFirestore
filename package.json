@@ -1,0 +1,15 @@
+{
+  "name": "MerakiLocationReceiver_GCPFirestore",
+  "version": "0.0.1",
+  "dependencies": {
+    "@google-cloud/datastore": "1.4.1",
+    "@google-cloud/firestore": "^3.5.0"
+  },
+  "scripts": {
+    "start": "functions-framework --target=merakiLocationReceiver",
+    "deploy": "gcloud beta functions deploy merakiLocationReceiver --trigger-http --runtime=nodejs10"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.4.0"
+  }
+}
